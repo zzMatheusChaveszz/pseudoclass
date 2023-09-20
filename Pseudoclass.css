@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(232, 240, 247);
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(33, 16, 95);
+    padding: 2%;
+}
+
+h1 {
+    color: aliceblue;
+    text-align: center;
+    margin-left: 23vh;
+    margin-right: 23vh;
+    border: 2px solid rgb(119, 135, 202);
+    border-radius: 33px;
+}
+
+#passar {  /* pseudoclasses 1 */
+    float: right; /* float  */
+    text-align: center;
+    background-color: rgb(64, 79, 216);
+    color: rgb(251, 255, 240);
+    padding: 1.5%;
+    margin-left: 1vh;
+    margin-right: 33vh;
+    margin-top: 2.8vh;
+}
+
+#passar:hover {  
+    color: rgb(239, 247, 246);
+    background-color: rgba(64, 79, 216, 0.774);
+}
+
+#ativar {  /* pseudoclasses 2 */
+    text-align: center;
+    background-color: rgb(31, 15, 124);
+    color: aliceblue;
+    padding: 1.5%;
+    margin-left: 33vh;
+    margin-right: 33vh;
+}
+
+#ativar:active {
+    font-family: cursive;
+    background-color: rgb(70, 52, 187);
+    color: rgb(243, 243, 243);
+    font-size: 33px;
+}
+
+h2 {
+    background-color: rgb(33, 16, 95);
+    color: aliceblue;
+    text-align: center;
+    margin-left: 33vh;
+    margin-right: 33vh;
+    border: 2px solid rgb(119, 135, 202);
+    border-radius: 33px;
+}
+
+li{  /* pseudoclasses 3,4 e 5 */
+    text-align: center;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.lista li:first-child {  /* 3 */
+    padding: 1%;
+    background: rgb(157, 174, 226);
+    
+}
+
+.lista li:nth-child(3) {  /* 4 */
+    text-align: center;
+    padding: 1%;
+    background: rgb(139, 135, 196);
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.lista li:last-child {  /* 5 */
+    text-align: center;
+    padding: 1%;
+    background: rgb(104, 105, 148);
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+#primeira{  /* pseudoelementos 1 */
+    text-align: center;
+    font-size: 33px;
+    color: rgb(13, 15, 32);
+}
+
+#primeira::first-letter {
+    font-size:200%;
+    color:#341bc5;
+}
+
+#linha{  /* pseudoelementos 2 */
+    text-align: center;
+}
+
+#linha::first-line {
+    background-color: #1a279e;
+    color: aliceblue;
+}
+
+#select{  /* pseudoelementos  */
+    text-align: center;
+    font-size: 33px;
+    font-family: fantasy;
+    color: #351bc594;
+}
+
+#select::selection{
+    background-color: #1bc55c;
+    color: #fffb00;
+}
+
+footer{
+    background-color: #1a279e;
+    color: aliceblue;
+    text-align: center;
+    position: absolute;
+    height: 10vh;
+    width: 100%;  /* width em % */
+}
